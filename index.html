@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="app">
+        <h1>The Rock Paper Scissors game!</h1>
+        <div class="output">
+            <div class="outputContainer">
+                <p>Matches:</p>
+                <p id="matches" data-clear="0">0</p>
+            </div>
+            <p>Score</p>
+            <div class="score">
+                <p>Player</p>
+                <p>Computer</p>
+                <p id="playerScore" data-clear="0">0</p>
+                <p id="computerScore" data-clear="0">0</p>
+            </div>
+            
+        </div>
+        <div class="main_buttons">
+            <button onclick="game('Rock')">Rock</button>
+            <button onclick="game('Paper')">Paper</button>
+            <button onclick="game('Scissors')">Scissors</button>
+        </div>
+        <button onclick="counter('Refresh')">Refresh game</button>
+        <div>
+            <p id="choices" data-clear="true"></p>
+            <p id="status" data-clear="true"></p>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
